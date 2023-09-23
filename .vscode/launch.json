@@ -1,0 +1,294 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "LeetCode_4_MedianOfTwoSortedArrays",
+            "request": "launch",
+            "mainClass": "LeetCode_4_MedianOfTwoSortedArrays",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_209_MinimumSizeSubArraySum",
+            "request": "launch",
+            "mainClass": "LeetCode_209_MinimumSizeSubArraySum",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_1658_MinimumOperationsToReduceXToZero",
+            "request": "launch",
+            "mainClass": "LeetCode_1658_MinimumOperationsToReduceXToZero",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_202_HappyNumber",
+            "request": "launch",
+            "mainClass": "LeetCode_202_HappyNumber",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_49_GroupAnargrams",
+            "request": "launch",
+            "mainClass": "LeetCode_49_GroupAnargrams",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_290_WordPattern",
+            "request": "launch",
+            "mainClass": "LeetCode_290_WordPattern",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_15_3Sum",
+            "request": "launch",
+            "mainClass": "LeetCode_15_3Sum",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_11_ContainerWithMostWater",
+            "request": "launch",
+            "mainClass": "LeetCode_11_ContainerWithMostWater",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_167_TwoSumIIInputArrayIsSorted",
+            "request": "launch",
+            "mainClass": "LeetCode_167_TwoSumIIInputArrayIsSorted",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_205_IsomorphicStrings",
+            "request": "launch",
+            "mainClass": "LeetCode_205_IsomorphicStrings",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_383_RansomeNote",
+            "request": "launch",
+            "mainClass": "LeetCode_383_RansomeNote",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_125_ValidPalindrome",
+            "request": "launch",
+            "mainClass": "LeetCode_125_ValidPalindrome",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_14_LongestCommonPrefix",
+            "request": "launch",
+            "mainClass": "LeetCode_14_LongestCommonPrefix",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_332_ReconstructItinerary",
+            "request": "launch",
+            "mainClass": "LeetCode_332_ReconstructItinerary",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_13_RomanToInteger",
+            "request": "launch",
+            "mainClass": "LeetCode_13_RomanToInteger",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_121_Stocks",
+            "request": "launch",
+            "mainClass": "LeetCode_121_Stocks",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_135_Candy",
+            "request": "launch",
+            "mainClass": "LeetCode_135_Candy",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_1282_GroupthePeopleGiventheGroupSizeTheyBelongTo",
+            "request": "launch",
+            "mainClass": "LeetCode_1282_GroupthePeopleGiventheGroupSizeTheyBelongTo",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_26_RemoveElemensFromSortedArray",
+            "request": "launch",
+            "mainClass": "LeetCode_26_RemoveElemensFromSortedArray",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_27_RemoveElement",
+            "request": "launch",
+            "mainClass": "LeetCode_27_RemoveElement",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_377_CombinationSumIV",
+            "request": "launch",
+            "mainClass": "LeetCode_377_CombinationSumIV",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_88_MergeArrays",
+            "request": "launch",
+            "mainClass": "LeetCode_88_MergeArrays",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "GenerateBill",
+            "request": "launch",
+            "mainClass": "DesignPattern.CreationalPatterns.FactoryMethodPattern.GenerateBill",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "TestRunner",
+            "request": "launch",
+            "mainClass": "Testing.TestingBasic.TestRunner",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "TestRunner",
+            "request": "launch",
+            "mainClass": "Testing.TestRunner",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "ComparableAndComparatorDemo",
+            "request": "launch",
+            "mainClass": "ComparableAndComparatorDemo",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "EnumDemo",
+            "request": "launch",
+            "mainClass": "EnumDemo",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "StringTest",
+            "request": "launch",
+            "mainClass": "StringTest",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "ConcatTest",
+            "request": "launch",
+            "mainClass": "ConcatTest",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Concurrency.LeetCode_1491.Solution",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CloneDemo",
+            "request": "launch",
+            "mainClass": "CloneDemo",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "DLL",
+            "request": "launch",
+            "mainClass": "DoublyLinkList.DLL",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "FileDemo",
+            "request": "launch",
+            "mainClass": "FileDemo",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "PropetiesFileDemo",
+            "request": "launch",
+            "mainClass": "PropetiesFileDemo",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "SerialDemo",
+            "request": "launch",
+            "mainClass": "SerialDemo",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "LambadaExpDemo",
+            "request": "launch",
+            "mainClass": "Thread.LambadaExpDemo",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "RunnableInterfaceDemo",
+            "request": "launch",
+            "mainClass": "Thread.RunnableInterfaceDemo",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "RefelectionDemo",
+            "request": "launch",
+            "mainClass": "refelection.RefelectionDemo",
+            "projectName": "java_b0580b91"
+        },
+        {
+            "type": "java",
+            "name": "XMLSerializerDemo",
+            "request": "launch",
+            "mainClass": "serialization.XMLSerializerDemo",
+            "projectName": "java_b0580b91"
+        }
+    ]
+}
