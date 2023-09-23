@@ -2,7 +2,6 @@ package Testing.TestingBasic;
 
 import org.junit.Test;
 import org.junit.Before;
-
 import junit.framework.TestCase;
 
 public class TestJunit extends TestCase {

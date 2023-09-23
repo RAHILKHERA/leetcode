@@ -1,11 +1,11 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.function.BiFunction;
-import java.util.function.Function;
+// import java.util.ArrayList;
+// import java.util.Arrays;
+// import java.util.Collections;
+// import java.util.List;
+// import java.util.function.BiFunction;
+// import java.util.function.Function;
 
-import static java.lang.Math.PI;
+// import static java.lang.Math.PI;
 
 public class Main {
     public class Jedi {
@@ -65,7 +65,7 @@ public class Main {
         int mask = 0x000F;
         int value = 0x2222;
         System.out.println(value & mask);
-        String abc = "leetscode";
+        
     }
 }
 

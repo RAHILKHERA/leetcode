@@ -56,4 +56,8 @@ class Save implements Serializable{
                                  129348938L;
     int i;
 
+    public static void main(String[] args) {
+        System.out.println(serialversionUID);
+    }
+
 }
