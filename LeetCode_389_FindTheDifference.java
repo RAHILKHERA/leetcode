@@ -12,22 +12,34 @@ class Solution_LeetCode_389_FindTheDifference {
     public char fintTheDifference(String s, String t) {
         //char ch ='\0';
         
-        int [] chCount = new int [26];
+        // int [] chCount = new int [26];
 
-        for (int i =0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            chCount[ch - 'a']++;
+        // for (int i =0; i < s.length(); i++) {
+        //     char ch = s.charAt(i);
+        //     chCount[ch - 'a']++;
+        // }
+
+        // for (int i =0; i < t.length(); i++) {
+        //     char ch = t.charAt(i);
+        //     chCount[ch - 'a']--;
+
+        //     if (chCount[ch - 'a'] == -1) {
+        //         return ch; 
+        //     }
+        // }
+
+        // return '\0';  
+
+        int sum = 0;
+        for (char ch : t.toCharArray()) {
+            sum += (int)ch;
         }
 
-        for (int i =0; i < t.length(); i++) {
-            char ch = t.charAt(i);
-            chCount[ch - 'a']--;
-
-            if (chCount[ch - 'a'] == -1) {
-                return ch; 
-            }
+        for (char ch : s.toCharArray()) {
+            sum -= (int)ch;
         }
 
-        return '\0';  
+        char ch = (char)sum;
+        return ch;  
     }
 }

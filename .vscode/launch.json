@@ -6,6 +6,370 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LeetCode_78_Subsets",
+            "request": "launch",
+            "mainClass": "LeetCode_78_Subsets",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_797_AllPathsFromSourceToTarget",
+            "request": "launch",
+            "mainClass": "LeetCode_797_AllPathsFromSourceToTarget",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_1863_SumOfAllSubsetXORTotals",
+            "request": "launch",
+            "mainClass": "LeetCode_1863_SumOfAllSubsetXORTotals",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_22_GenerateParentheses",
+            "request": "launch",
+            "mainClass": "LeetCode_22_GenerateParentheses",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_39_CombinationSum",
+            "request": "launch",
+            "mainClass": "LeetCode_39_CombinationSum",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_1980_FindUniqueBinaryStrings",
+            "request": "launch",
+            "mainClass": "LeetCode_1980_FindUniqueBinaryStrings",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_2785_SortVowelsinAString",
+            "request": "launch",
+            "mainClass": "LeetCode_2785_SortVowelsinAString",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_2642_DesignGraphWithSortestPathCalculator",
+            "request": "launch",
+            "mainClass": "LeetCode_2642_DesignGraphWithSortestPathCalculator",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_1743_RestoretheArrayFromAdjacentPairs",
+            "request": "launch",
+            "mainClass": "LeetCode_1743_RestoretheArrayFromAdjacentPairs",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_257_BinaryTreePaths",
+            "request": "launch",
+            "mainClass": "LeetCode_257_BinaryTreePaths",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_77_Combinations",
+            "request": "launch",
+            "mainClass": "LeetCode_77_Combinations",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_1759_CountNumberOfHomenousStrings",
+            "request": "launch",
+            "mainClass": "LeetCode_1759_CountNumberOfHomenousStrings",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_201_BitWiseAndOfNumbersRange",
+            "request": "launch",
+            "mainClass": "LeetCode_201_BitWiseAndOfNumbersRange",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_1921_EliminateMaximumNumberofMonsters",
+            "request": "launch",
+            "mainClass": "LeetCode_1921_EliminateMaximumNumberofMonsters",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_191_NumberOf1Bits",
+            "request": "launch",
+            "mainClass": "LeetCode_191_NumberOf1Bits",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_190_ReverseBits",
+            "request": "launch",
+            "mainClass": "LeetCode_190_ReverseBits",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_1441_BuildanArrayWithStackOperations",
+            "request": "launch",
+            "mainClass": "LeetCode_1441_BuildanArrayWithStackOperations",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_8_StringToInteger_atoi",
+            "request": "launch",
+            "mainClass": "LeetCode_8_StringToInteger_atoi",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_103_BinaryTreeZigZagLevelOrderTraversal",
+            "request": "launch",
+            "mainClass": "LeetCode_103_BinaryTreeZigZagLevelOrderTraversal",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_102_BinaryTreeLevelOrderTraversal",
+            "request": "launch",
+            "mainClass": "LeetCode_102_BinaryTreeLevelOrderTraversal",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_199_BinaryTreeRightSideView",
+            "request": "launch",
+            "mainClass": "LeetCode_199_BinaryTreeRightSideView",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_637_AverageOfLevelsInBinaryTree",
+            "request": "launch",
+            "mainClass": "LeetCode_637_AverageOfLevelsInBinaryTree",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_844_BackSpaceStringCompare",
+            "request": "launch",
+            "mainClass": "LeetCode_844_BackSpaceStringCompare",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_173_BinarySearchTreeIterator",
+            "request": "launch",
+            "mainClass": "LeetCode_173_BinarySearchTreeIterator",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_236_LowestCommonAncestorofABinaryTree",
+            "request": "launch",
+            "mainClass": "LeetCode_236_LowestCommonAncestorofABinaryTree",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_129_SumRootToLeafNodes",
+            "request": "launch",
+            "mainClass": "LeetCode_129_SumRootToLeafNodes",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_114_FlattenBinaryTreeToLinkedList",
+            "request": "launch",
+            "mainClass": "LeetCode_114_FlattenBinaryTreeToLinkedList",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_119_PascalTriangle2",
+            "request": "launch",
+            "mainClass": "LeetCode_119_PascalTriangle2",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_117_PopulatingNextRightPointersinEachNode",
+            "request": "launch",
+            "mainClass": "LeetCode_117_PopulatingNextRightPointersinEachNode",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_106_ConstructBinaryTreeFromInorderAndPostOrderTraversal",
+            "request": "launch",
+            "mainClass": "LeetCode_106_ConstructBinaryTreeFromInorderAndPostOrderTraversal",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_105_ConstructBinraryTreeFromPreOrderAndInorderTraversal",
+            "request": "launch",
+            "mainClass": "LeetCode_105_ConstructBinraryTreeFromPreOrderAndInorderTraversal",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_222_CountCompleteTreeNodes",
+            "request": "launch",
+            "mainClass": "LeetCode_222_CountCompleteTreeNodes",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_746_MinCostClimbingStairs",
+            "request": "launch",
+            "mainClass": "LeetCode_746_MinCostClimbingStairs",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_128_LongestConsecutiveSequence",
+            "request": "launch",
+            "mainClass": "LeetCode_128_LongestConsecutiveSequence",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_289_GameofLife",
+            "request": "launch",
+            "mainClass": "LeetCode_289_GameofLife",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_104_MaximumDepthOfBinaryTree",
+            "request": "launch",
+            "mainClass": "LeetCode_104_MaximumDepthOfBinaryTree",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_134_GasStation",
+            "request": "launch",
+            "mainClass": "LeetCode_134_GasStation",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_189_RotateArray",
+            "request": "launch",
+            "mainClass": "LeetCode_189_RotateArray",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_155_MinStack",
+            "request": "launch",
+            "mainClass": "LeetCode_155_MinStack",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_71_SimplifyPath",
+            "request": "launch",
+            "mainClass": "LeetCode_71_SimplifyPath",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_34_FindTheFirstAndLastPositionOfElementInSortedArray",
+            "request": "launch",
+            "mainClass": "LeetCode_34_FindTheFirstAndLastPositionOfElementInSortedArray",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_149_MaxPointsonALine",
+            "request": "launch",
+            "mainClass": "LeetCode_149_MaxPointsonALine",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_343_IntegerBreak",
+            "request": "launch",
+            "mainClass": "LeetCode_343_IntegerBreak",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_69_Sqrtx",
+            "request": "launch",
+            "mainClass": "LeetCode_69_Sqrtx",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_66_PlusOne",
+            "request": "launch",
+            "mainClass": "LeetCode_66_PlusOne",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_707_DesignLinkList",
+            "request": "launch",
+            "mainClass": "LeetCode_707_DesignLinkList",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_706_DesignHashMap",
+            "request": "launch",
+            "mainClass": "LeetCode_706_DesignHashMap",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_234_PalindromeLinkList",
+            "request": "launch",
+            "mainClass": "LeetCode_234_PalindromeLinkList",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_9_Palindrome",
+            "request": "launch",
+            "mainClass": "LeetCode_9_Palindrome",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_61_RotateList",
+            "request": "launch",
+            "mainClass": "LeetCode_61_RotateList",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_2038_RemoveColoredPiecesIfBothNeighborsAretheSameColor",
+            "request": "launch",
+            "mainClass": "LeetCode_2038_RemoveColoredPiecesIfBothNeighborsAretheSameColor",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_82_RemoveDuplicatesFromSortedList2",
+            "request": "launch",
+            "mainClass": "LeetCode_82_RemoveDuplicatesFromSortedList2",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
             "name": "LeetCode_4_MedianOfTwoSortedArrays",
             "request": "launch",
             "mainClass": "LeetCode_4_MedianOfTwoSortedArrays",
