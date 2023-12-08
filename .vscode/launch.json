@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LeetCode_1662_CheckIfTwoStringsAreEquivalent",
+            "request": "launch",
+            "mainClass": "LeetCode_1662_CheckIfTwoStringsAreEquivalent",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_606_ConstructStringFromBinaryTree",
+            "request": "launch",
+            "mainClass": "LeetCode_606_ConstructStringFromBinaryTree",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode_200_NumberOfIslands",
+            "request": "launch",
+            "mainClass": "LeetCode_200_NumberOfIslands",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
             "name": "LeetCode_78_Subsets",
             "request": "launch",
             "mainClass": "LeetCode_78_Subsets",
