@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestRunner",
+            "request": "launch",
+            "mainClass": "Testing.TestingBasic.TestRunner",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
             "name": "LeetCode_1278_ElementAppearingMoreThan25PercentInSortedArray",
             "request": "launch",
             "mainClass": "LeetCode_1278_ElementAppearingMoreThan25PercentInSortedArray",
