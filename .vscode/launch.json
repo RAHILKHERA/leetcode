@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LeetCode_1582_SpecialPositionsInBinaryMatrix",
+            "request": "launch",
+            "mainClass": "LeetCode_1582_SpecialPositionsInBinaryMatrix",
+            "projectName": "leetcode_556ce293"
+        },
+        {
+            "type": "java",
             "name": "TestRunner",
             "request": "launch",
             "mainClass": "Testing.TestingBasic.TestRunner",
