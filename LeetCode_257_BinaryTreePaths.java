@@ -19,31 +19,30 @@ public class LeetCode_257_BinaryTreePaths {
 
 class Solution_LeetCode_257_BinaryTreePaths {
     public List<String> binaryTreePaths(TreeNode root) {
-        
+
         List<String> result = new ArrayList<>();
-        
+
         if (root == null) {
             return result;
         }
 
-        //postorder(root, paths, path);
+        // postorder(root, paths, path);
         // for (List<TreeNode> ipath : paths) {
 
-        //     boolean firstNode = true;
-        //     StringBuilder builder = new StringBuilder();
-        //     for (TreeNode t : ipath) {
+        // boolean firstNode = true;
+        // StringBuilder builder = new StringBuilder();
+        // for (TreeNode t : ipath) {
 
-        //         if (firstNode) {
-        //             builder.append(t.val);
-        //             firstNode = false;
-        //         } else {
-        //             builder.append("->").append(t.val);
-        //         }
-
-        //     }
-        //     result.add(builder.toString());
+        // if (firstNode) {
+        // builder.append(t.val);
+        // firstNode = false;
+        // } else {
+        // builder.append("->").append(t.val);
         // }
 
+        // }
+        // result.add(builder.toString());
+        // }
 
         if (root.left == null && root.right == null) {
             result.add(String.valueOf(root.val));
@@ -53,30 +52,29 @@ class Solution_LeetCode_257_BinaryTreePaths {
         postorder(root.left, result, new StringBuilder().append(root.val));
         postorder(root.right, result, new StringBuilder().append(root.val));
 
-        
-
         return result;
     }
 
-    private void postorder(TreeNode node, List<List<TreeNode>> paths, List<TreeNode> path) {
+    // private void postorder(TreeNode node, List<List<TreeNode>> paths,
+    // List<TreeNode> path) {
 
-        if (node == null) {
-            return;
-        }
+    // if (node == null) {
+    // return;
+    // }
 
-        path.add(node);
+    // path.add(node);
 
-        if (node.left == null && node.right == null) {
-            paths.add(path);
-        }
+    // if (node.left == null && node.right == null) {
+    // paths.add(path);
+    // }
 
-        postorder(node.left, paths, new ArrayList<>(path));
+    // postorder(node.left, paths, new ArrayList<>(path));
 
-        postorder(node.right, paths, new ArrayList<>(path));    
+    // postorder(node.right, paths, new ArrayList<>(path));
 
-    }
+    // }
 
-     private void postorder(TreeNode node, List<String> paths, StringBuilder path) {
+    private void postorder(TreeNode node, List<String> paths, StringBuilder path) {
 
         if (node == null) {
             return;
@@ -90,7 +88,7 @@ class Solution_LeetCode_257_BinaryTreePaths {
 
         postorder(node.left, paths, new StringBuilder(path.toString()));
 
-        postorder(node.right, paths, new StringBuilder(path.toString()));    
+        postorder(node.right, paths, new StringBuilder(path.toString()));
 
     }
 }
