@@ -37,9 +37,10 @@ public class LeetCode_79_WordSearch {
 
     public boolean exist(char[][] board, String word) {
 
+        char wordCharArray[] = word.toCharArray();
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
-                if (backtrack(board, word, 0, i, j)) {
+                if (wordCharArray[0] == board[i][j] && backtrack(board, wordCharArray, 0, i, j)) {
                     return true;
                 }
             }
@@ -47,21 +48,26 @@ public class LeetCode_79_WordSearch {
         return false;
     }
 
-    public boolean backtrack(char[][] board, String word, int index, int i, int j) {
+    public boolean backtrack(char[][] board, char[] wordCharArray, int index, int i, int j) {
 
-        if (index == word.length())
+        if (index == wordCharArray.length)
             return true;
 
-        if (i >= board.length || i < 0 || j >= board[0].length || j < 0 || board[i][j] != word.charAt(index)) {
+        if (i >= board.length || i < 0 || j >= board[0].length || j < 0 || board[i][j] != wordCharArray[index]) {
             return false;
         }
 
         board[i][j] += 100;
 
-        boolean result = backtrack(board, word, index + 1, i + 1, j) ||
-                backtrack(board, word, index + 1, i - 1, j) ||
-                backtrack(board, word, index + 1, i, j + 1) ||
-                backtrack(board, word, index + 1, i, j - 1);
+        boolean result = backtrack(board,
+                wordCharArray, index + 1, i + 1, j) ||
+                backtrack(board,
+                        wordCharArray, index + 1, i - 1, j)
+                ||
+                backtrack(board,
+                        wordCharArray, index + 1, i, j + 1)
+                ||
+                backtrack(board, wordCharArray, index + 1, i, j - 1);
 
         board[i][j] -= 100;
 
