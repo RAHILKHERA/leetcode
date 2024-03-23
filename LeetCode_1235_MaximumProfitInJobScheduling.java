@@ -6,6 +6,7 @@ import java.util.Comparator;
 
 import org.junit.Test;
 
+//Important DP question
 public class LeetCode_1235_MaximumProfitInJobScheduling {
 
     @Test
