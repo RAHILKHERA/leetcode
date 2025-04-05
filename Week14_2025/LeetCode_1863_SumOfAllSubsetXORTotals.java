@@ -30,7 +30,7 @@ package Week14_2025;
  * by n - 1;
  * 
  * Time Complexity: O(n)
- * Space Complexity: O(1) where n = input length/
+ * Space Complexity: O(1) where n = input length.
  */
 
 public class LeetCode_1863_SumOfAllSubsetXORTotals {
