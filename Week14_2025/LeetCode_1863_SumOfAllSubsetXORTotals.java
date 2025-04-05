@@ -40,6 +40,6 @@ public class LeetCode_1863_SumOfAllSubsetXORTotals {
             result |= num;
         }
 
-        return result << nums.length - 1;
+        return result << (nums.length - 1);
     }
 }
