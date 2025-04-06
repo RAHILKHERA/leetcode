@@ -59,7 +59,7 @@ public class LeetCode_368_LargestDivisbleSubset_BottomUp {
         // Value at each index of memo also represents its position in the subset.
         List<Integer> result = new ArrayList<>();
         int largestSubSet = memo[maxId];
-        for (int pos = maxId; largestSubSet > 0; pos--) {
+        for (int pos = maxId; largestSubSet > 0 && pos >= 0; pos--) {
             if (nums[maxId] % nums[pos] == 0 && memo[pos] == largestSubSet) {
                 result.add(nums[pos]);
                 largestSubSet--;
