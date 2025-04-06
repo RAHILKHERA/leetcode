@@ -64,7 +64,7 @@ public class LeetCode_368_LargestDivisbleSubset {
         List<Integer> take = new ArrayList<>();
         if (prevIdx == -1 || nums[idx] % nums[prevIdx] == 0) {
             take = new ArrayList<>(solve(nums, idx + 1, idx));
-            take.add(nums[idx]); // prepend
+            take.add(nums[idx]);
         }
 
         List<Integer> result = take.size() > skip.size() ? take : skip;
