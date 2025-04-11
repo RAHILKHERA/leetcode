@@ -1,5 +1,4 @@
 package Week15_2025;
-
 /**
  * LeetCode Problem: 2999 Count the number of powerful integers
  * Problem Link:
@@ -60,6 +59,7 @@ package Week15_2025;
  */
 
 public class LeetCode_2999_CountTheNumberOfPowerfulIntegers {
+
     public long numberOfPowerfulInt(long start, long finish, int limit, String s) {
         String start_ = Long.toString(start - 1);
         String finish_ = Long.toString(finish);
