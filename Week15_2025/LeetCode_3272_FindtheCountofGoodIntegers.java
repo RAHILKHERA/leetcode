@@ -34,11 +34,23 @@ import java.util.Set;
  * 
  * 
  * Approach:
- * 1)
+ * 1) Find all the k-palindromic integers from start to end. Convert number into
+ * string for easiness of opertion.
+ * 2) To calculate good integer for each k-palindrome, calculate permutation.
+ * a) If there are n distinct digits, it will be n!.
+ * b) Find the freq of each digit, this will be used to calculate permutations.
+ * c) As the number is palindromic, all the digits will be with even frequency
+ * except atmost one digit with odd frequency. Hence, permutation = n!/(product
+ * of freq!), where freq! is factorial of frequency of each digit.
+ * d) Preceeding zeros are not allowed. So for the first position in the number,
+ * only non-zero digits are available. So permutation for single k-palindrome =
+ * non-zero * (n-1)!/ (product
+ * of freq!)
  * 
- * Time Complexity: O(n^2). It will still be O(n^2), but this will be faster
- * compare to top-down approach due to absence of recursion overhead.
- * Space Complexity: O(n) where n = input length.
+ * 
+ * Time Complexity: O(10^n log n). where 10^n = digits and due to sorting it
+ * will n log n.
+ * Space Complexity: O(10^n).
  */
 
 public class LeetCode_3272_FindtheCountofGoodIntegers {
