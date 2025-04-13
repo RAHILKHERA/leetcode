@@ -1,0 +1,50 @@
+@startuml snakesnladders
+
+class Game {
+    - Board board
+    - Dice dice
+    - Deque<Player> playersList
+    - Player winner
+    + void initializeGame()
+    + void addPlayers()
+    + void startGame()
+    - Player findPlayerTurn()
+    - int jumpCheck(int playerNewPosition)
+}
+
+class Board {
+    - Cell[][] cells
+    + void initializeCells(int boardSize)
+    + void addSnakeLadders(Cell [][] cells, int numberOfSnakes, int numberOfLadders)
+    + Cell getCell(int playerPosition)
+}
+
+class Cell {
+    - Jump jump
+}
+
+class Dice {
+    - int diceCount
+    - int min
+    - int max
+    + int rollDice()
+}
+
+class Jump {
+    - int start
+    - int end
+}
+
+class Player {
+    - String id 
+    - int currentPosition
+}
+
+Game --* Board
+Game --* Dice
+Game --* Player
+Cell --* Jump
+Board --* Cell
+
+
+@enduml
