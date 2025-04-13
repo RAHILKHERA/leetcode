@@ -1,0 +1,154 @@
+====================================================================
+            Custom HashMap - Interview Questions & Concepts
+====================================================================
+
+✅ Overview:
+------------
+This document contains common interview questions, deep-dive explanations,
+and important concepts relevant to a custom HashMap implementation in Java.
+
+Use this as a reference for interview prep or future enhancements.
+
+====================================================================
+1. Why is the capacity a power of two?
+--------------------------------------------------------------------
+We use power-of-two capacities to allow efficient index computation:
+    index = (hashTable.length - 1) & hash;
+
+This avoids the cost of modulo (%) and works only if the table length 
+is a power of two. It also improves distribution across buckets when
+combined with a well-spread hash function.
+
+====================================================================
+2. What does the `getCapacity(int capacity)` method do?
+--------------------------------------------------------------------
+This method calculates the next power of two greater than or equal to 
+the provided capacity.
+
+Example logic (bitwise hack):
+    int n = capacity - 1;
+    n |= n >>> 1;
+    n |= n >>> 2;
+    n |= n >>> 4;
+    n |= n >>> 8;
+    n |= n >>> 16;
+    return (n + 1);
+
+This ensures we avoid resizing for small increases and always maintain
+the power-of-two invariant.
+
+====================================================================
+3. Why use `(hash = hashCode()) ^ (hash >>> 16)` in getIndex?
+--------------------------------------------------------------------
+This is known as **hash spreading**. Since only the lower bits of hash 
+are used for index calculation (due to `& (length - 1)`), spreading 
+the higher bits downwards helps reduce clustering and improves the
+distribution of keys across buckets.
+
+Without this, poor hashCode implementations may lead to more collisions.
+
+====================================================================
+4. Why disallow null keys or values?
+--------------------------------------------------------------------
+To simplify implementation. Java's `HashMap` allows one null key and 
+many null values. But custom implementations may skip this for clarity.
+
+Handling null keys requires extra logic in `put()`, `get()`, and `remove()`.
+
+====================================================================
+5. What collision resolution strategy is used?
+--------------------------------------------------------------------
+Separate chaining using **singly linked lists**. Each bucket can hold 
+a list of entries whose keys hash to the same index.
+
+This is simple to implement and works well for small maps or good hash functions.
+
+====================================================================
+6. What are the drawbacks of using linked lists?
+--------------------------------------------------------------------
+- Worst-case time complexity becomes O(n) for operations
+- Poor performance if hash function causes clustering
+- Longer chains → more memory allocation, slower access
+
+Java 8+ uses red-black trees when chains become too long (>8) to maintain O(log n) access.
+
+====================================================================
+7. How does resizing work here?
+--------------------------------------------------------------------
+This implementation does not currently support resizing.
+
+In a real-world map:
+- When load factor (size / capacity) > 0.75, resize is triggered
+- All existing entries are rehashed and moved into a new table
+
+This maintains O(1) average time complexity.
+
+====================================================================
+8. Time and Space Complexity
+--------------------------------------------------------------------
+| Operation | Best / Avg Case | Worst Case |
+|-----------|------------------|-------------|
+| put()     | O(1)             | O(n)        |
+| get()     | O(1)             | O(n)        |
+| remove()  | O(1)             | O(n)        |
+| space     | O(n + m) where n = entries, m = buckets |
+
+Worst-case O(n) occurs when all keys hash to the same index (single chain).
+
+====================================================================
+9. How is index computed?
+--------------------------------------------------------------------
+Using:
+    (hashTable.length - 1) & hash
+
+This works *only* when `hashTable.length` is a power of two.
+
+It is a faster alternative to `hash % capacity` and produces evenly 
+distributed indices when combined with good hash spreading.
+
+====================================================================
+10. Improvements to consider
+--------------------------------------------------------------------
+- Implement resizing (with load factor, threshold, and rehashing)
+- Add support for null keys/values
+- Use doubly linked list or tree for better performance on collisions
+- Implement Iterable / entrySet() support
+- Thread safety for concurrent use
+- Unit tests for all boundary cases
+
+====================================================================
+11. Typical Interview Questions
+--------------------------------------------------------------------
+Q1. Why use power of 2 for capacity?
+Q2. How do you calculate index efficiently?
+Q3. How do you handle collisions?
+Q4. What are pros/cons of using linked list for collisions?
+Q5. Why hash spreading (XOR with >>>16)?
+Q6. How would you add resizing to this?
+Q7. Why not allow null keys/values?
+Q8. How does put/get/remove work internally?
+Q9. Can two unequal objects have same hash?
+Q10. What happens when two keys collide?
+Q11. How can performance degrade in a bad implementation?
+Q12. How does this compare to Java’s in-built HashMap?
+
+====================================================================
+12. Sample Code Comments
+--------------------------------------------------------------------
+/**
+ * getCapacity(): Returns next power of 2 >= input.
+ * This ensures fast index calculation using bit masking.
+ */
+ 
+/**
+ * getIndex(): Applies hash spreading (XOR with shifted hash)
+ * and maps to a valid table index using bitwise AND.
+ */
+ 
+/**
+ * put(): Adds or updates a key-value pair. Uses separate chaining.
+ * get(): Retrieves value if key exists, else null.
+ * remove(): Unlinks matching node from the chain at bucket.
+ */
+
+====================================================================
