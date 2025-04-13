@@ -1,0 +1,141 @@
+@startuml snakesnladders
+
+enum GameStatus {
+    COMPLETED
+    INPROGRESS
+    WATITING
+}
+
+enum PlayerStatus {
+    PLAYING
+    ACTIVE
+    INACTIVE
+}
+
+enum PlayerStatus {
+    PLAYING
+    ACTIVE
+    INACTIVE
+}
+
+enum ColorCoin {
+    RED
+    YELLOW
+    GREEN
+    BLUE
+}
+
+enum PlayerPosition {
+    WON
+    SECOND
+    THIRD
+    LOST
+}
+
+
+
+
+Class GameController {
+    - List<Game> onGoingGames
+    - Queue<Player> waitingPlayers
+    - Queue<Game> waitingGames
+    + allocatePlayerToGame()
+    + createGame(int numberOfPlayers)
+    + acceptGameRequest()
+    - updateGameStatus()
+    + getInstance()
+
+}
+
+
+
+Class Game {
+    - int GameId
+    - Board board
+    - int numberOfPlayers
+    - Dequeu<Player> players
+    - GameStatus status
+    - List<Result>  result
+    + Board createBoard()
+    - boolean startGame()
+    + void endGame()
+    + manageTurns()
+    + moveCoins(int steps)
+}
+
+Class Dice {
+    -int numberOfFace
+    -int numberOfDice
+    -int rollDice()
+    -int minValue
+}
+
+Class TwoDice {
+    +int rollDice()
+}
+
+Class IrregularDice {
+    +int rollDice()
+}
+
+Class Result {
+    - String PlayerId
+    - PlayerPosition position
+}
+
+class Board {
+    - int boardId
+    - int size
+    - Map<Integer, BoardObject>  snakesNLadders
+    - Dice dice
+    + void intializeBoard(List<BoardObject>)
+    + void intializeDice(int numberOfFace, int numberOfDice)
+}
+
+
+class BoardObject {
+    -int start
+    -int end
+    + boolean isSnake() 
+    + boolean isLadder() 
+}
+
+
+
+class Player{
+    String playerId
+    List<Game> games
+    PlayerStatus status
+    int currentGamePosition
+    int rank
+    int points
+    GameController gameControllerInstance
+    + void submitGameRequest()
+    + void quitGame()
+}
+
+
+
+Class Coin {
+    int position
+    ColorCoin color
+}
+
+
+
+
+
+Game --* Board
+Board --* Coin
+Game --> Player
+Player --> Game
+Board --* BoardObject
+Game --* Result
+GameController --> Game
+GameController --> Player
+Dice <|-- TwoDice
+Dice <|-- IrregularDice
+Board --* Dice
+Player --* GameController
+
+@enduml
