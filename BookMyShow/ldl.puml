@@ -1,0 +1,142 @@
+@startuml bookmyshow
+
+enum SeatType {
+    SILVER
+    GOLD
+    PLATINUM
+    VIP
+}
+
+enum BookingStatus {
+    BOOKED
+    NOT_BOOKED
+}
+
+enum PaymentStatus {
+    FAILED
+    COMPLETED
+    PENDING
+}
+
+enum SeatStatus {
+    AVAILABLE
+    NOT_AVAILABLE
+}
+
+
+class City {
+    - String name
+}
+
+class Movie {
+    -long movieId
+    -String movieName
+    -int movieLength
+}
+
+interface PropertyChangeListener {}
+
+class MovieController {
+    - Map<City, Map<movieId, Movie>> cityMovieMap
+    + List<Movie> getMovies(String city)
+    + void addMovie(String city, Movie movie)
+    + boolean removeMovie(String city, Movie movie)
+    + void addCity(String city)
+    + boolean removeCity(String city)
+    + void firePropertyChange(PropertyChangeEvent evnt)
+}
+
+class TheaterController {
+    - Map<City, Map<theaterId, Theater>> cityTheater
+    - Map<Movie, Map<theaterId, Theater>> movieTheater
+    - PropertyChangeSupport zeroTheaterMovie
+    + Map<Theater, List<Shows>> getTheatersWithShows(String City, Movie movie)
+    + void addTheaterToCity(City city, Theater theater)
+    + void removeTheaterFromCity(City city, Theater theater)
+    + void addZeroMovieTheaterListener(PropertyChangeListener listener)
+    + void removeZeroMovieTheaterListener(PropertyChangeListener listener)
+    + void firePropertyChange("ZERO_Theater", Movie movie, City city)
+
+}
+
+class Theater {
+    - long theaterId 
+    - List<Movie> movies
+    - List<Screen> screens
+    - Map<Movie, List<Shows>> movieShowsMap
+    + List<Shows> getShows(Movie movie)
+    + boolean addMoviesShows(Movie movie, Show show)
+    + boolean removeMoviesShows(Movie movie, Show show)
+}
+
+class Show {
+    - Time startTime
+    - Screen screen
+    - Movie movie
+    + List<Seats> getSeats()
+    + List<Seats> selectSeats()
+    + Booking booking(List<Seats>)
+}
+
+class Screen {
+    - String screenId
+    - List<Shows> shows
+    - List<Seats> seats
+    + List<Seats> getSeats()
+}
+
+class Seat {
+    - String seatId
+    - String row
+    - SeatType type
+    - int price
+    - SeatStatus status
+}
+
+
+class Booking {
+    - int bookingId
+    - Movie movie
+    - Payment payment
+    - Seat seat
+    - Show show
+    - BookingStatus status
+    - Payment payment
+}
+
+interface Payment {
+    + long calculateBill(Seats seats, Movie movie)
+    + void makePayment()
+    + void updateStatus()
+}
+
+class Cash  {
+    - PaymentStatus status
+}
+
+class UPI {
+    - String upi
+    + validateUpi()
+}
+
+class CreditCard {
+    - CreditCardDetails details
+}
+
+MovieController --* Movie
+MovieController --* City
+TheaterController --* Theater
+TheaterController --* Show
+TheaterController --* City
+Show --* Screen
+Screen --* Seat
+Show --* Booking
+Booking --* Payment
+
+Payment <|.. Cash
+Payment <|.. UPI
+Payment <|.. CreditCard
+
+MovieController <|.. PropertyChangeListener
+
+@enduml
