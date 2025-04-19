@@ -9,7 +9,6 @@ public class Directory implements FileSystem {
     private long id;
     private Map<Long, FileSystem> children;
     private String name;
-    private long size;
 
     public Directory(String name) {
         id = idGenerator();
@@ -26,7 +25,7 @@ public class Directory implements FileSystem {
 
     public void removeChild(FileSystem file) {
         if (!children.containsKey(file.getId())) {
-            throw new RuntimeException("File/Directory does not exists.");
+            throw new RuntimeException("File/Directory does not exist.");
         }
         children.remove(file.getId());
     }
@@ -37,7 +36,8 @@ public class Directory implements FileSystem {
 
     @Override
     public String toString() {
-        return "Directory [id = " + id + ", name = " + name + ", size = " + size + ", children = " + children.size()
+        return "Directory [id = " + id + ", name = " + name + ", size = " + getSize() + ", children = "
+                + children.size()
                 + "]";
     }
 
