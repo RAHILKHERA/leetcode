@@ -26,7 +26,7 @@ import org.junit.Test;
  * lower-nums[i] upper-nums[i]
  * #2 From above number line representation, it is clear if number of elements
  * less than upper - nums[i] + 1 = x and number of elements less than lower -
- * nums[i] = y. Then x - y is the count of fair paris for ith element.
+ * nums[i] = y. Then x - y is the count of fair pairs for ith element.
  * #3 Both x and y can be searched using binary search (lower_bound).
  * #4 As nums[i] + nums[j] = nums[j] + nums[i], The array can be sorted and
  * binary search can performed.
