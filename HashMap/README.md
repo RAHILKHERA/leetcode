@@ -1,4 +1,4 @@
-```markdown
+
 # Custom HashMap Implementation in Java
 
 This project provides a custom implementation of `HashMap` in Java, mimicking the internal structure of Java 8's `HashMap`. It is aimed at understanding hashing, collision handling, and bit-level optimization for indexing. This can be a great resource for learning, interviews, or system design prep.
