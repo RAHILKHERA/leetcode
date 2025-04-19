@@ -51,6 +51,15 @@ public class LeetCode_2824_CountPairsWhoseSumIsLessThanTarget {
         assertEquals(10, countPairs(list, -2));
     }
 
+    @Test
+    public void testEdgeCases() {
+        List<Integer> emptyList = Arrays.asList();
+        assertEquals(0, countPairs(emptyList, 5));
+
+        List<Integer> singleElementList = Arrays.asList(1);
+        assertEquals(0, countPairs(singleElementList, 2));
+    }
+
     private int lowerBound(List<Integer> nums, int low, int high, int target) {
 
         while (low <= high) {
