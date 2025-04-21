@@ -10,12 +10,12 @@ public class AppleFactory implements Factory {
 
     @Override
     public Phone createPhone() {
-        ApplePhoneBuilder phoneBuilder = new ApplePhoneBuilder();
-        phoneBuilder.setOs(PhoneOS.MACOS);
-        phoneBuilder.setPhoneType(PhoneType.SMARTPHONE);
-        phoneBuilder.setRam(256);
-        phoneBuilder.setResolution(12);
-        return phoneBuilder.getPhone();
+        return new ApplePhoneBuilder()
+                .setOs(PhoneOS.MACOS)
+                .setPhoneType(PhoneType.SMARTPHONE)
+                .setRam(256)
+                .setResolution(12)
+                .getPhone();
     }
 
     @Override

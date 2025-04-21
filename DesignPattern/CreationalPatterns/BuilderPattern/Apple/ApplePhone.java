@@ -1,6 +1,7 @@
 package DesignPattern.CreationalPatterns.BuilderPattern.Apple;
 
 import DesignPattern.CreationalPatterns.BuilderPattern.Phone.Phone;
+import DesignPattern.CreationalPatterns.BuilderPattern.Phone.PhoneBuilder;
 import DesignPattern.CreationalPatterns.BuilderPattern.Phone.PhoneOS;
 import DesignPattern.CreationalPatterns.BuilderPattern.Phone.PhoneType;
 
@@ -11,11 +12,11 @@ public class ApplePhone implements Phone {
     private PhoneType type;
     private int resoultion;
 
-    public ApplePhone(PhoneOS os, int ramCapacity, PhoneType type, int resoultion) {
-        this.os = os;
-        this.ramCapacity = ramCapacity;
-        this.type = type;
-        this.resoultion = resoultion;
+    public ApplePhone(PhoneBuilder phoneBuilder) {
+        os = phoneBuilder.getOs();
+        ramCapacity = phoneBuilder.getRamCapacity();
+        type = phoneBuilder.getPhoneType();
+        resoultion = phoneBuilder.getResolution();
     }
 
     public PhoneOS getOs() {
