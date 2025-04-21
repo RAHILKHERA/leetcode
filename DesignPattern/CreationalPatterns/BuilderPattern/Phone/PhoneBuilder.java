@@ -2,11 +2,19 @@ package DesignPattern.CreationalPatterns.BuilderPattern.Phone;
 
 public interface PhoneBuilder {
 
-    void setPhoneType(PhoneType type);
+    PhoneBuilder setPhoneType(PhoneType type);
 
-    void setRam(int ramCapacity);
+    PhoneBuilder setRam(int ramCapacity);
 
-    void setOs(PhoneOS os);
+    PhoneBuilder setOs(PhoneOS os);
 
-    void setResolution(int resoultion);
+    PhoneBuilder setResolution(int resoultion);
+
+    PhoneType getPhoneType();
+
+    int getRamCapacity();
+
+    PhoneOS getOs();
+
+    int getResolution();
 }

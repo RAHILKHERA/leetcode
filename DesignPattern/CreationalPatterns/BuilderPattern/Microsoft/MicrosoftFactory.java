@@ -10,12 +10,12 @@ public class MicrosoftFactory implements Factory {
 
     @Override
     public Phone createPhone() {
-        MicrosoftPhoneBuilder phoneBuilder = new MicrosoftPhoneBuilder();
-        phoneBuilder.setOs(PhoneOS.WINDOWS);
-        phoneBuilder.setPhoneType(PhoneType.SMARTPHONE);
-        phoneBuilder.setRam(512);
-        phoneBuilder.setResolution(24);
-        return phoneBuilder.getPhone();
+        return new MicrosoftPhoneBuilder()
+                .setOs(PhoneOS.WINDOWS)
+                .setPhoneType(PhoneType.SMARTPHONE)
+                .setRam(512)
+                .setResolution(24)
+                .getPhone();
     }
 
     @Override

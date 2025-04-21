@@ -13,27 +13,51 @@ public class ApplePhoneBuilder implements PhoneBuilder {
     private int resoultion;
 
     @Override
-    public void setPhoneType(PhoneType type) {
+    public ApplePhoneBuilder setPhoneType(PhoneType type) {
         this.type = type;
+        return this;
     }
 
     @Override
-    public void setRam(int ramCapacity) {
+    public ApplePhoneBuilder setRam(int ramCapacity) {
         this.ramCapacity = ramCapacity;
+        return this;
     }
 
     @Override
-    public void setOs(PhoneOS os) {
+    public ApplePhoneBuilder setOs(PhoneOS os) {
         this.os = os;
+        return this;
     }
 
     @Override
-    public void setResolution(int resoultion) {
+    public ApplePhoneBuilder setResolution(int resoultion) {
         this.resoultion = resoultion;
+        return this;
     }
 
     public Phone getPhone() {
-        return new ApplePhone(os, ramCapacity, type, resoultion);
+        return new ApplePhone(this);
+    }
+
+    @Override
+    public PhoneType getPhoneType() {
+        return type;
+    }
+
+    @Override
+    public int getRamCapacity() {
+        return ramCapacity;
+    }
+
+    @Override
+    public PhoneOS getOs() {
+        return os;
+    }
+
+    @Override
+    public int getResolution() {
+        return resoultion;
     }
 
 }

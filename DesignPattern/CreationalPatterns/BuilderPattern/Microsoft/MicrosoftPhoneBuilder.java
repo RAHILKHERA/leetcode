@@ -12,26 +12,50 @@ public class MicrosoftPhoneBuilder implements PhoneBuilder {
     private int resoultion;
 
     @Override
-    public void setPhoneType(PhoneType type) {
+    public MicrosoftPhoneBuilder setPhoneType(PhoneType type) {
         this.type = type;
+        return this;
     }
 
     @Override
-    public void setRam(int ramCapacity) {
+    public MicrosoftPhoneBuilder setRam(int ramCapacity) {
         this.ramCapacity = ramCapacity;
+        return this;
     }
 
     @Override
-    public void setOs(PhoneOS os) {
+    public MicrosoftPhoneBuilder setOs(PhoneOS os) {
         this.os = os;
+        return this;
     }
 
     @Override
-    public void setResolution(int resoultion) {
+    public MicrosoftPhoneBuilder setResolution(int resoultion) {
         this.resoultion = resoultion;
+        return this;
     }
 
     public Phone getPhone() {
-        return new MicrosoftPhone(os, ramCapacity, type, resoultion);
+        return new MicrosoftPhone(this);
+    }
+
+    @Override
+    public PhoneType getPhoneType() {
+        return type;
+    }
+
+    @Override
+    public int getRamCapacity() {
+        return ramCapacity;
+    }
+
+    @Override
+    public PhoneOS getOs() {
+        return os;
+    }
+
+    @Override
+    public int getResolution() {
+        return resoultion;
     }
 }

@@ -1,6 +1,7 @@
 package DesignPattern.CreationalPatterns.BuilderPattern.Microsoft;
 
 import DesignPattern.CreationalPatterns.BuilderPattern.Phone.Phone;
+import DesignPattern.CreationalPatterns.BuilderPattern.Phone.PhoneBuilder;
 import DesignPattern.CreationalPatterns.BuilderPattern.Phone.PhoneOS;
 import DesignPattern.CreationalPatterns.BuilderPattern.Phone.PhoneType;
 
@@ -11,11 +12,11 @@ public class MicrosoftPhone implements Phone {
     private PhoneType type;
     private int resoultion;
 
-    public MicrosoftPhone(PhoneOS os, int ramCapacity, PhoneType type, int resoultion) {
-        this.os = os;
-        this.ramCapacity = ramCapacity;
-        this.type = type;
-        this.resoultion = resoultion;
+    public MicrosoftPhone(PhoneBuilder phoneBuilder) {
+        os = phoneBuilder.getOs();
+        ramCapacity = phoneBuilder.getRamCapacity();
+        type = phoneBuilder.getPhoneType();
+        resoultion = phoneBuilder.getResolution();
     }
 
     @Override
