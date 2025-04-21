@@ -6,7 +6,7 @@ package Week17_2025;
  * https://leetcode.com/problems/count-the-hidden-sequences/description/?envType=daily-question&envId=2025-04-21
  * 
  * Definition:
- * Differences array : differences betwee each pair of consecutive integers. 
+ * Differences array : differences between each pair of consecutive integers. 
  * differences[i] = hidden[i + 1] - hidden[i]
  *
  * Task:
@@ -16,10 +16,10 @@ package Week17_2025;
  * Observations:
  * #1. differences[i] = hidden[i + 1] - hidden[i]
  * => hidden[i + 1] = hidden[i] + differences[i]
- * #2. Assume given difference array is [d0, d1, d2] and  if first element of sequence is x then othere elements can be calcualted as follows:
+ * #2. Assume given difference array is [d0, d1, d2] and  if first element of sequence is x then other elements can be calculated as follows:
  *      x + d[0], x + d[0] + d[1], x + d[0] + d[1] + d[2]. 
  * #3. (d[0], d[0] + d[1], d[0] + d[1] + d[2]) is a prefix sum pattern. 
- * #4. Shifiting prefix sum D[i] (D[i] = D[i-1] + d[i]) of each difference by value 'x' will result in the hidden sequence, and this to be valid all the elements should be in [lower, upper].
+ * #4. Shifting prefix sum D[i] (D[i] = D[i-1] + d[i]) of each difference by value 'x' will result in the hidden sequence, and this to be valid all the elements should be in [lower, upper].
  * => lower <= x + D[i] <= upper (For every prefix sum this should hold.)
  * => lower <= x + min (D[i]) and max(D[i]) + x <= upper (Generalize form)
  * => lower - min(D[i]) <= x and x <= upper - max(D[i]).
@@ -84,16 +84,16 @@ public class LeetCode_2145_CountTheHiddenSequences {
         int min = 0;
         int max = 0;
         int currDiffSum = 0;
-        int maxDiff = upper - lower;
+        int allowedRange = upper - lower;
         for (int diff : differences) {
             currDiffSum += diff;
             min = Math.min(min, currDiffSum);
             max = Math.max(max, currDiffSum);
-            if ((max - min) > maxDiff) {
+            if ((max - min) > allowedRange) {
                 return 0;
             }
         }
 
-        return (maxDiff) - (max - min) + 1;
+        return (allowedRange) - (max - min) + 1;
     }
 }
