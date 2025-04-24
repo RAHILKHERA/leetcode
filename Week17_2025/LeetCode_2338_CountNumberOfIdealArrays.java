@@ -126,8 +126,10 @@ import org.junit.Test;
  * - count -> 15
  * - Final -> O(maxValue * 15 + 15) => O(maxValue).
  * 
- * The following solution is directly implemented based on this YouTube video:
- * https://www.youtube.com/watch?v=-3O4xMNjnUs&t=855s&ab_channel=codestorywithMIK
+ * Referenced video for conceptual clarity:
+ * [https://www.youtube.com/watch?v=-3O4xMNjnUs&t=855s&ab_channel=codestorywithMIK]
+ * Rewritten and documented in Java after full understanding.
+ * 
  */ 
 
 public class LeetCode_2338_CountNumberOfIdealArrays {
