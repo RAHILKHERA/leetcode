@@ -9,7 +9,7 @@ import DesignPattern.BehavioralPatterns.IteratorLibrary.IteratorImpl.ReverseBook
 import DesignPattern.BehavioralPatterns.IteratorLibrary.Iterators.Iterator;
 import DesignPattern.BehavioralPatterns.IteratorLibrary.Model.Book;
 
-public class Library implements Aggregator<Iterator<Book>> {
+public class Library implements Aggregator<Book> {
 
     private List<Book> books;
 
