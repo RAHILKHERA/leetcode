@@ -6,6 +6,111 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.BehavioralPatterns.VisitorFileSystem.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.StructuralPatterns.Decorator_CoffeeShopBillingSystem.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.BehavioralPatterns.StateDocumentEditor.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.BehavioralPatterns.MediatorAirTrafficControl.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.BehavioralPatterns.IteratorLibrary.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "RemotControl",
+      "request": "launch",
+      "mainClass": "DesignPattern.BehavioralPatterns.CommandSmartHomeAutomation.RemotControl",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Client",
+      "request": "launch",
+      "mainClass": "DesignPattern.BehavioralPatterns.Command.Client",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.StructuralPatterns.FlyWeight.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.StructuralPatterns.BridgePattern.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.StructuralPatterns.FacadePattern.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.CreationalPatterns.BuilderPatter_1.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Client",
+      "request": "launch",
+      "mainClass": "DesignPattern.CreationalPatterns.BuilderPattern.Client",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.StructuralPatterns.AdapterPattern_1.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.StructuralPatterns.AdapterPattern.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "DesignPattern.StructuralPatterns.CompositePattern.Demo",
+      "projectName": "LeetCode_48a32fc5"
+    },
+    {
+      "type": "java",
       "name": "LeetCode_209_MinimumSizeSubArraySum",
       "request": "launch",
       "mainClass": "LeetCode_209_MinimumSizeSubArraySum",
