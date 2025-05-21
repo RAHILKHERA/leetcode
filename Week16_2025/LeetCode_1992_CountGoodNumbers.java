@@ -40,7 +40,7 @@ public class LeetCode_1992_CountGoodNumbers {
     private static final long MOD = 1_000_000_007;
 
     public int countGoodNumbers(long n) {
-        return (int) ((powIterative(5, (n + 1) / 2) * powIterative(4, n / 2)) % MOD);
+        return (int) ((powIterative(5, (n + 1) / 2) * powRecursive(4, n / 2)) % MOD);
     }
 
     private long powRecursive(long x, long y) {
