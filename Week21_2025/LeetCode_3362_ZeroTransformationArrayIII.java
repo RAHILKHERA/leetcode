@@ -87,7 +87,7 @@ import java.util.PriorityQueue;
 
 import org.junit.Test;
 
-public class Leet_3362_ZeroTransformationArrayIII {
+public class LeetCode_3362_ZeroTransformationArrayIII {
 
     @Test
     public void test1() {
