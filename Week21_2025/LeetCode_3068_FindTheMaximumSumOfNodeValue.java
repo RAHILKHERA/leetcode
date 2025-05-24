@@ -4,7 +4,7 @@ package Week21_2025;
  * @RAHILKHERA
  *
  * LeetCode Problem: 3068 Find the maximum sum of node value.
- * Problem Link: https://leetcode.com/problems/zero-array-transformation-iii/description/?envType=daily-question&envId=2025-05-22
+ * Problem Link: https://leetcode.com/problems/find-the-maximum-sum-of-node-values/?envType=daily-question&envId=2025-05-23
  *
  * Input:
  * - Undirected tree with n nodes numbered from 0 to n - 1. 
