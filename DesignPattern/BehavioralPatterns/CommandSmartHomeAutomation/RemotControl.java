@@ -43,7 +43,7 @@ public class RemotControl {
 
         manager.undo();
         manager.undo();
-        
+
         MacroCommandImpl goodNight = new MacroCommandImpl();
 
         List <Command> commands = new ArrayList<>();
@@ -54,11 +54,22 @@ public class RemotControl {
         setACTemperature.setTemperature((byte) 22);
         commands.add(setACTemperature);
         commands.add(new TurnOnFan("Bed Room 1 Fan"));
-        
+
         goodNight.addMacroCommand(commands);
         goodNight.execute();
 
         goodNight.undo();
-      
+
+        /// Temperature Undo Test.
+        SetTemperature setAcTemperature = new SetTemperature("BedRoom 1 AirConditioner");
+        setAcTemperature.setTemperature(22);
+        manager.executeCommand(new PowerOnAC("BedRoom 1 AirConditioner"));
+        manager.executeCommand(setAcTemperature);
+        setAcTemperature.setTemperature(25);
+        manager.executeCommand(setAcTemperature);
+        setAcTemperature.setTemperature(17);
+        manager.executeCommand(setAcTemperature);
+        manager.undo();
+
     }
 }

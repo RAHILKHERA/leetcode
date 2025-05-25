@@ -9,7 +9,7 @@ public class AirConditionerImpl implements AirConditioner {
 
     private String id;
     private boolean isOn;
-    private byte temperature;
+    private int temperature;
 
     public AirConditionerImpl(String airConditionerId) {
         this.id = airConditionerId;
@@ -39,16 +39,22 @@ public class AirConditionerImpl implements AirConditioner {
     }
 
     @Override
-    public void setTemperature(byte temp) {
+    public void setTemperature(int temp) {
         if (isOn) {
             if (temp >= MIN_TEMPERATURE && temp <= MAX_TEMPERATURE) {
                 System.out.println("AC " + id + " setting  temperature to " + temp);
+                this.temperature = temp;
             } else {
                 System.out.println("AC " + id + " cannot set the temperature. Temperature out of range.");
             }
         } else {
             System.out.println("AC " + id + " is off. Cannot set the temperature.");
         }
+    }
+
+    @Override
+    public int getTemperature() {
+        return temperature;
     }
 
 }
