@@ -9,7 +9,7 @@ import DesignPattern.BehavioralPatterns.CommandSmartHomeAutomation.Devices.AirCo
 public abstract class AirConditionerCommand implements Command{
     
     private String id;
-    private byte temperature;
+    private int temperature;
 
     public AirConditionerCommand(String id) {
         this.id = id;
@@ -19,11 +19,11 @@ public abstract class AirConditionerCommand implements Command{
         return Optional.ofNullable(AirConditionerManager.getInstance().getAirConditioner(id));
     }
 
-    public void setTemperature(byte temp) {
+    public void setTemperature(int temp) {
         this.temperature = temp;
     }
 
-    public byte getTemperature() {
+    public int getTemperature() {
         return temperature;
     }
 
