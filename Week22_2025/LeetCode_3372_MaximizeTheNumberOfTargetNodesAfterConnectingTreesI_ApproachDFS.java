@@ -84,14 +84,12 @@ import static org.junit.Assert.assertArrayEquals;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Queue;
 
 import org.junit.Test;
 
-public class LeetCode_3372_MaximizeTheNumberOfTargetNodesAfterConnectingTreesI_ApproachBFS {
+public class LeetCode_3372_MaximizeTheNumberOfTargetNodesAfterConnectingTreesI_ApproachDFS {
 
     @Test
     public void test1() {
